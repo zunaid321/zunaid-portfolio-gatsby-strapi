@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('D:/Work/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('C:/Work/Portfolio/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/Work/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Work/Portfolio/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/Work/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('C:/Work/Portfolio/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     },{
-      plugin: require('D:/Work/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-webfonts/gatsby-ssr'),
+      plugin: require('C:/Work/Portfolio/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-webfonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":{"google":[{"family":"Roboto","variants":["400","700"]},{"family":"Open Sans"}]}},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
