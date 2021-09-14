@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "JMDC Portfolio",
-    description: "This is JMDC WebDev Portfolio Site",
-    author: "JMDC",
-    twitterUsername: "@rminima.design",
+    title: "Zunaid's Portfolio",
+    description: "Assalamu Walaikum! This is Zunaid Amin Enan's Portfolio Site",
+    author: "Zunaid Amin Enan",
+    twitterUsername: "@CryptoZunaid",
     image: "/twitter-img.png",
-    siteUrl: "https://jmdevc.netlify.app",
+    siteUrl: "https://www.zunaidaminenan.xyz",
   },
 
   plugins: [
@@ -34,7 +34,7 @@ module.exports = {
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [`jobs`,`projects`,`blogs`],
+        contentTypes: [`jobs`,`projects`],
         singleTypes: [`about`],
       },
     },

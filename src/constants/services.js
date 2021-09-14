@@ -1,22 +1,22 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid, FaFirstOrder } from "react-icons/fa"
+import { FaConnectdevelop, FaSketch, FaAndroid, FaFirstOrder } from "react-icons/fa"
 export default [
   {
     id: 1,
-    icon: <FaCode className="service-icon" />,
-    title: "web development",
-    text: `Designing, building, integrating, scaling and maintaining dynamic software solutions that work via intranet or internet.`,
+    icon: <FaConnectdevelop className="service-icon" />,
+    title: "Web Development",
+    text: `I will develop any scale (small, medium, large) web application or do any kind of web programming.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `Fully-customized scalable content and UI/UX design.`,
+    title: "Web Design",
+    text: `I will design high quality and very Professional Web Design and fully Responsive Website Design focused on your specific business needs`,
   },
   {
     id: 4,
     icon: <FaFirstOrder className="service-icon" />,
-    title: "Parametric Design",
-    text: ` Designing 3D geometry which can be manipulated to generate multiple shapes using generative algorithms.`,
+    title: "Deployment",
+    text: `Deploying your code on Cloud can be hectic sometimes. I can help you in deploying your App on various Cloud platforms Like Azure, AWS, Heroku, Firebase, Google Cloud, Netlify, and Gatsby cloud. `,
   },
 ]

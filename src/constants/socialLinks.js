@@ -10,17 +10,17 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookMessenger className="social-icon"></FaFacebookMessenger>,
-    url: "https://www.facebook.com/josemanuel.dominguez.710/",
+    url: "https://www.facebook.com/zunaidamin.enan.10/",
   },
   {
     id: 4,
     icon: <FaGithub className="social-icon"></FaGithub>,
-    url: "https://github.com/jmdc89",
+    url: "https://github.com/zunaid321",
   },
   {
     id: 2,
     icon: <FaLinkedinIn className="social-icon"></FaLinkedinIn>,
-    url: "https://www.linkedin.com/in/jos%C3%A9-manuel-dom%C3%ADnguez-425b1b113/",
+    url: "https://www.linkedin.com/in/zunaidaminenan/",
   },
   
   // {

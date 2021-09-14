@@ -29,7 +29,7 @@ const SEO = ({ title, description }) => {
 
 
   return (
-    <Helmet htmlAttributes={{lang:"en"}} title={`${title}} | ${siteTitle}`} >
+    <Helmet htmlAttributes={{lang:"en"}} title={`${siteTitle}`} >
           <meta name="description" content={description || siteDesc} />
           <meta name="image" content={image} />
           <meta name="twitter:card" content="summary_large_image" />
@@ -37,6 +37,14 @@ const SEO = ({ title, description }) => {
           <meta name="twitter:title" content={siteTitle} />
           <meta name="twitter:description" content={siteDesc} />
           <meta name="twitter:image" content={`${siteUrl}${image}`} />
+
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content={siteUrl}/>
+          <meta property="og:title" content={siteTitle}/>
+          <meta property="og:description" content={description || siteDesc}/>
+          <meta property="og:image" content={image} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="628" />
       </Helmet>
   ) 
 }

@@ -12,12 +12,11 @@ export default ({data}) => {
 
   const {
     allStrapiProjects:{nodes:projects},
-    allStrapiBlogs:{nodes:blogs}
   } = data
 
   return (
   <Layout>
-      <SEO title="Home" description="this is ou home page" />
+      <SEO title="Home" description="this is our home page" />
       <Hero />
       <Services />
       <Jobs />
@@ -50,24 +49,5 @@ export const query = graphql`
         }
       }
     }
-
-    allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
-      nodes {
-        slug
-        content
-        desc
-        date(formatString: "MMMM Do, YYYY")
-        id
-        title
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-
   }
 `

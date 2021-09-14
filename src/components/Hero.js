@@ -29,23 +29,23 @@ const Hero = () => {
                       <h1>Zunaid Amin Enan</h1>
                       <h2 className="typewriter-style"><Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString("Architect.")
+                            typewriter.typeString("A Muslim")
                             .pauseFor(750)
                             .deleteAll()
-                            .typeString("Researcher.")
+                            .typeString("Full-Stack Developer")
                             .pauseFor(750)
                             .deleteAll()
-                            .typeString("Computational Designer.")
+                            .typeString("DevOps")
                             .pauseFor(750)
                             .deleteAll()
-                            .typeString("Autodidact.")
+                            .typeString("Tech Enthusiast")
                             .pauseFor(750)
                             .deleteAll()
-                            .typeString("Developer.")
+                            .typeString("Android Developer")
                             .start();       
                         }}
                       /></h2>
-                      <h3>Designing and building exceptional websites, applications, parametric models, complex geometry and everything in between.</h3>
+                      <h3>Freelance DevOps & Web Developer</h3>
                       <Link to='/contact' className="btn">
                           Get in touch
                       </Link>
