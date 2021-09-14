@@ -16,7 +16,7 @@ export default ({data}) => {
 
   return (
   <Layout>
-      <SEO title="Home" description="this is our home page" />
+      <SEO title="Zunaid's Portfolio" description="Assalamu Walaikum! This is Zunaid Amin Enan's Portfolio Site" />
       <Hero />
       <Services />
       <Jobs />
