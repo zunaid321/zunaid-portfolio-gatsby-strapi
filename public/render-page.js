@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js"), (function webpackLoadOptionalExternalModule() { try { return require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js"); } catch(e) {} }()), require("fs"), require("http"), require("https"), require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"), require("zlib"));
+		module.exports = factory(require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js"), require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\common-tags\\lib\\index.js"), (function webpackLoadOptionalExternalModule() { try { return require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js"); } catch(e) {} }()), require("fs"), require("http"), require("https"), require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"), require("zlib"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js", "D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js", "fs", "http", "https", "D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js", "path", "react", "react-dom/server", "react-helmet", "zlib"], factory);
+		define("lib", ["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js", "D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\common-tags\\lib\\index.js", "D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js", "fs", "http", "https", "D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js", "path", "react", "react-dom/server", "react-helmet", "zlib"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js"), (function webpackLoadOptionalExternalModule() { try { return require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js"); } catch(e) {} }()), require("fs"), require("http"), require("https"), require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"), require("zlib"));
+		exports["lib"] = factory(require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js"), require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\common-tags\\lib\\index.js"), (function webpackLoadOptionalExternalModule() { try { return require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js"); } catch(e) {} }()), require("fs"), require("http"), require("https"), require("D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"), require("zlib"));
 	else
-		root["lib"] = factory(root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js"], root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js"], root["fs"], root["http"], root["https"], root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"], root["zlib"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_debug__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_http__, __WEBPACK_EXTERNAL_MODULE_https__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__, __WEBPACK_EXTERNAL_MODULE_zlib__) {
+		root["lib"] = factory(root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\@reach\\router\\index.js"], root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\common-tags\\lib\\index.js"], root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\debug\\src\\index.js"], root["fs"], root["http"], root["https"], root["D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\lodash\\merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"], root["zlib"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_common_tags__, __WEBPACK_EXTERNAL_MODULE_debug__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_http__, __WEBPACK_EXTERNAL_MODULE_https__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__, __WEBPACK_EXTERNAL_MODULE_zlib__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -104,6 +104,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 var plugins = [{
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-image/gatsby-ssr */ "./node_modules/gatsby-plugin-image/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
   options: {
     "plugins": []
@@ -6092,6 +6097,66 @@ function parsePath(path) {
     hash: hash === "#" ? "" : hash
   };
 }
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-image/gatsby-ssr.js":
+/*!********************************************************!*\
+  !*** ./node_modules/gatsby-plugin-image/gatsby-ssr.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var React = __webpack_require__(/*! react */ "react");
+
+var commonTags = __webpack_require__(/*! common-tags */ "common-tags");
+
+function _interopNamespace(e) {
+  if (e && e.__esModule) return e;
+  var n = Object.create(null);
+
+  if (e) {
+    Object.keys(e).forEach(function (k) {
+      if (k !== 'default') {
+        var d = Object.getOwnPropertyDescriptor(e, k);
+        Object.defineProperty(n, k, d.get ? d : {
+          enumerable: true,
+          get: function () {
+            return e[k];
+          }
+        });
+      }
+    });
+  }
+
+  n['default'] = e;
+  return n;
+}
+
+var React__namespace = /*#__PURE__*/_interopNamespace(React);
+
+var generateHtml = function generateHtml(str) {
+  return {
+    __html: commonTags.oneLine(str)
+  };
+};
+
+function onRenderBody(_ref) {
+  var setHeadComponents = _ref.setHeadComponents;
+  setHeadComponents([React__namespace.createElement("style", {
+    key: "gatsby-image-style",
+    dangerouslySetInnerHTML: generateHtml(".gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}")
+  }), React__namespace.createElement("noscript", {
+    key: "gatsby-image-style-noscript",
+    dangerouslySetInnerHTML: generateHtml("<style>" + ".gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}" + "</style>")
+  }), React__namespace.createElement("script", {
+    key: "gatsby-image-style-script",
+    type: "module",
+    dangerouslySetInnerHTML: generateHtml("const e=\"undefined\"!=typeof HTMLImageElement&&\"loading\"in HTMLImageElement.prototype;e&&document.body.addEventListener(\"load\",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector(\"[data-placeholder-image]\"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition=\"opacity 500ms linear\")}))}),!0);")
+  })]);
+}
+
+exports.onRenderBody = onRenderBody;
 
 /***/ }),
 
@@ -53135,6 +53200,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ (function(module, exports) {
 
 module.exports = require("assert");
+
+/***/ }),
+
+/***/ "common-tags":
+/*!*****************************************************************************************************!*\
+  !*** external "D:\\Work\\zunaid-portfolio-gatsby-strapi\\node_modules\\common-tags\\lib\\index.js" ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_common_tags__;
 
 /***/ }),
 

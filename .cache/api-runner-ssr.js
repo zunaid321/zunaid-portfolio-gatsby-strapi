@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('D:/Work/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('D:/Work/zunaid-portfolio-gatsby-strapi/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
